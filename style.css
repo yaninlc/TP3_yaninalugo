@@ -45,14 +45,14 @@ body {
     padding: 10px 20px;
     margin: 10px;
     background-color: pink;
-    color: rgb(212, 29, 197);
+    color: rgb(29, 124, 212);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .boton:hover {
-    background-color: #ff69b4;
+    background-color: #e58f9a;
   }
   
   .boton:active {
@@ -90,7 +90,7 @@ body {
   
   /* Estilo para cada vehículo en la galería */
   .vehiculo {
-    background-color: #e733b1;
+    background-color: #832266;
     border: 1px solid #f05ed7;
     padding: 20px;
     text-align: center;
@@ -109,7 +109,7 @@ body {
   
   .vehiculo p {
     font-size: 1em;
-    color: #555;
+    color: #ecd9d9;
   }
   
   /* Estilo de las imágenes de los autos */
@@ -138,7 +138,7 @@ body {
   }
   
   .tabla-autos th {
-    background-color: #020102;
+    background-color: #bd7fbd;
   }
   
   /* Pie de página */
