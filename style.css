@@ -7,8 +7,8 @@
   }
   
   .vehiculo {
-    background-color: #b814c7;
-    border: 1px solid #b42ac0;
+    background-color: #e733b1;
+    border: 1px solid #f05ed7;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -116,7 +116,7 @@ body {
   }
   
   .imagen-auto-item {
-    width: 150px;
+    width: 200px;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -124,5 +124,4 @@ body {
   .imagen-auto-item:hover {
     transform: scale(1.1);
   }
-  
   
