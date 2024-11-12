@@ -1,43 +1,89 @@
-/* Contenedor principal */
-.container {
+/* Estilos generales */
+body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
   }
   
-  .bienvenida {
-    color: #FF69B4; /* Rosa */
-    font-size: 36px;
+  /* Estilo del título de bienvenida */
+  h1.bienvenida {
+    font-size: 2.5em;
+    color: pink;
     animation: bienvenidaAnimada 3s ease-in-out infinite;
   }
   
-  .imagen-animada {
-    max-width: 200px;
-    margin-top: 20px;
-    animation: imagenAnimada 5s ease-in-out infinite;
-  }
-  
+  /* Animación de bienvenida (cambio de color) */
   @keyframes bienvenidaAnimada {
-    0% { color: #FF69B4; }
-    50% { color: #FF1493; }
-    100% { color: #FF69B4; }
+    0% { color: pink; }
+    50% { color: lightblue; }
+    100% { color: pink; }
   }
   
-  @keyframes imagenAnimada {
+  /* Estilo de la imagen animada (giro continuo) */
+  .imagen-animada {
+    width: 150px;
+    height: auto;
+    animation: imagenMovimiento 5s linear infinite;
+  }
+  
+  @keyframes imagenMovimiento {
     0% { transform: rotate(0deg); }
-    50% { transform: rotate(180deg); }
     100% { transform: rotate(360deg); }
   }
   
-  /* Estilo de la galería de imágenes */
+  /* Estilo para las tablas */
+  .tabla-autos {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .tabla-autos th, .tabla-autos td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .tabla-autos th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo de los botones */
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: pink;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .boton:hover {
+    background-color: #ff69b4;
+  }
+  
+  .boton:active {
+    background-color: #c0c0c0;
+  }
+  
+  /* Estilo para la galería de imágenes */
   .galeria {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 40px;
   }
   
   .imagen-auto {
@@ -61,7 +107,7 @@
     color: #555;
   }
   
-  /* Estilo de los botones */
+  /* Estilo de los botones para la navegación */
   .boton {
     display: inline-block;
     background-color: #FF69B4; /* Rosa */
@@ -90,4 +136,5 @@
     font-size: 0.9em;
     color: #777;
   }
+  
   
