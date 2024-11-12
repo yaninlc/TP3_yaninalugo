@@ -85,7 +85,7 @@ body {
   }
   
   .tabla-autos th {
-    background-color: #ad16db;
+    background-color: #020102;
   }
   
   /* Estilo de los botones */
@@ -105,7 +105,7 @@ body {
   }
   
   .boton:active {
-    background-color: #b10b0b;
+    background-color: #fd30c0;
   }
   
   /* Estilo para las imágenes de los autos */
