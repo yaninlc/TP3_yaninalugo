@@ -1,95 +1,93 @@
-/* Estilos generales */
-body {
+/* Contenedor principal */
+.container {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    width: 90%;
+    text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
   }
   
-  h1.bienvenida {
-    font-size: 2.5em;
-    color: pink;
+  .bienvenida {
+    color: #FF69B4; /* Rosa */
+    font-size: 36px;
     animation: bienvenidaAnimada 3s ease-in-out infinite;
   }
   
-  /* Animación de bienvenida */
-  @keyframes bienvenidaAnimada {
-    0% { color: pink; }
-    50% { color: lightblue; }
-    100% { color: pink; }
-  }
-  
-  /* Imagen animada */
   .imagen-animada {
-    width: 150px;
-    height: auto;
-    animation: imagenMovimiento 5s linear infinite;
+    max-width: 200px;
+    margin-top: 20px;
+    animation: imagenAnimada 5s ease-in-out infinite;
   }
   
-  @keyframes imagenMovimiento {
+  @keyframes bienvenidaAnimada {
+    0% { color: #FF69B4; }
+    50% { color: #FF1493; }
+    100% { color: #FF69B4; }
+  }
+  
+  @keyframes imagenAnimada {
     0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
     100% { transform: rotate(360deg); }
   }
   
-  /* Estilo para las tablas */
-  .tabla-autos {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-  }
-  
-  .tabla-autos th, .tabla-autos td {
-    padding: 12px;
-    border: 1px solid #ccc;
-    text-align: left;
-  }
-  
-  .tabla-autos th {
-    background-color: #f2f2f2;
-  }
-  
-  /* Estilo de los botones */
-  .boton {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: pink;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .boton:hover {
-    background-color: #ff69b4;
-  }
-  
-  .boton:active {
-    background-color: #c0c0c0;
-  }
-  
-  /* Estilo para las imágenes de los autos */
+  /* Estilo de la galería de imágenes */
   .galeria {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .imagen-auto {
+    text-align: center;
+    width: 200px;
   }
   
   .imagen-auto-item {
-    width: 150px;
-    height: auto;
+    width: 100%;
+    max-width: 150px;
     transition: transform 0.3s ease;
   }
   
   .imagen-auto-item:hover {
     transform: scale(1.1);
+  }
+  
+  .imagen-auto p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Estilo de los botones */
+  .boton {
+    display: inline-block;
+    background-color: #FF69B4; /* Rosa */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .boton:hover {
+    background-color: #FF1493; /* Rosa más oscuro */
+    transform: scale(1.1);
+  }
+  
+  .boton:active {
+    background-color: #000; /* Negro al presionar */
+    transform: scale(1);
+  }
+  
+  /* Pie de página */
+  footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
   }
   
